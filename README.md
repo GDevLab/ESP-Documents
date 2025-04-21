@@ -1,7 +1,7 @@
 # ESP-Documents
  My ESP-Documents
 
-Download Repo > Unzip > Go to ESP-Documents Floder
+Fork และ Download Repo > Unzip > Go to ESP-Documents Floder
 
 ใน ESP-Documents Floder รันคำสั่ง : python.exe -m mkdocs serve
 
