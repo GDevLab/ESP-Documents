@@ -21,6 +21,6 @@ nav :
     - Electronic Senser Module : ref/sensor-module.md 
 theme : readthedocs
 
-repo_url : https://github.com/example/repository/
+repo_url : https://github.com/GDevLab/ESP-Documents
 
 copyright : Microtronic.Biz
