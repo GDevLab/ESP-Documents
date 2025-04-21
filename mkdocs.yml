@@ -1,0 +1,26 @@
+site_name : ESP-Documents
+site_description : 
+site_author : By Microtronic
+site_url : https://microtronic.biz/esp-documents
+plugins:
+  - search :
+nav :
+  - Wellcome to ESP-Documents : 
+    - Starter : index.md
+    - Software : software.md
+  - Projects : 
+    - อุณหภูมิ ความชื่น : projects/tempHumiProject1.md
+  - ESP WiFi :
+    - WiFiManager : projects/conn-wifi.md
+  - ESP Webserver :
+    - Webserver : projects/remoteSockets.md
+  - Reference :
+    - ESP Pinout : ref/esp_pinout.md
+    - Ref Pins : ref/pins.md
+    - ESP Framework : ref/framework.md
+    - Electronic Senser Module : ref/sensor-module.md 
+theme : readthedocs
+
+repo_url : https://github.com/example/repository/
+
+copyright : Microtronic.Biz
