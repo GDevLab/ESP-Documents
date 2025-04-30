@@ -13,8 +13,10 @@ nav :
   - ESP WiFi :
     - WiFiManager : projects/conn-wifi.md
   - ESP Webserver :
-    - Webserver : projects/remoteSockets.md
-  - Reference :
+    - Basic Webserver : projects/nodemcuWebServer.md
+    - WiFi AP : projects/nodemcuWiFiAP.md
+    - Remote Socket : projects/remoteSockets.md
+  - Reference : 
     - ESP Pinout : ref/esp_pinout.md
     - Ref Pins : ref/pins.md
     - ESP Framework : ref/framework.md

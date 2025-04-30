@@ -42,7 +42,7 @@ ESP WiFiManager เพื่อสร้าง Web Server ควบคุม GPI
         - ย้ายโฟลเดอร์ ArduinoJSON ไปยัง โฟลเดอร์ไลบรารีของคุณ
         - สุดท้ายให้เปิด Arduino IDE ของคุณอีกครั้ง
 
-## รายการฮาร์ดแวร์ : 
+## รายการฮาร์ดแวร์
 
 **นี่คือฮาร์ดแวร์ที่คุณต้องมีเพื่อทำให้โครงการนี้เสร็จสมบูรณ์ :**
 
@@ -241,7 +241,7 @@ void loop(){
 - `Serial.println("Connected.");` : แสดงข้อความเมื่อเชื่อมต่อ WiFi สำเร็จ
 - `server.begin();` : เริ่มต้น Web Server
 
-**void loop():**
+**void loop() :**
 
 - `WiFiClient client = server.available();` : ตรวจสอบว่ามี Client ใหม่พยายามเชื่อมต่อมายัง Web Server หรือไม่ หากมี จะคืนอ็อบเจ็กต์ `WiFiClient`
 - `if (client)` : หากมี Client เชื่อมต่อเข้ามา :
