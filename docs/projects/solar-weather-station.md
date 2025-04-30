@@ -180,7 +180,7 @@ void deepSleep(BatteryCondition BatteryCondition) {
 // โดยรับค่าแรงดันแบตเตอรี่ (voltage) เป็น Argument
 int calculateSoC(float voltage) {
     float BATT_MIN = 3.15;  // กำหนดค่าแรงดันต่ำสุด (BATT_MIN) ของแบตเตอรี่
-    float BATT_MAX = 4.2;   // กำหนดค่าแรงดันสูงสุด (BATT_MAX) ของแบตเตอรี่
+    float BATT_MAX = 4.2;   // กำหนดค่าแรงดันสูงสุด (BATT_MAX) ของแบตเตอรี่    
     // คำนวณ SoC โดยใช้สูตรเชิงเส้น : ((แรงดันปัจจุบัน - แรงดันต่ำสุด) / (แรงดันสูงสุด - แรงดันต่ำสุด)) * 100
     int soc = ((voltage - BATT_MIN) / (BATT_MAX - BATT_MIN)) * 100;
     if (soc > 100)
@@ -196,14 +196,14 @@ int calculateSoC(float voltage) {
 // โดยรับค่าจาก Pin ที่กำหนด (BATT_PIN)
 float getBattVoltage() {
     //read battery voltage per %
-    long sum = 0;                  // sum of samples taken
-    float voltage = 0.0;           // calculated voltage
-    int soc ;            //SoC
-    const float battery_max = 4.2; //maximum voltage of battery
-    const float battery_min = 3.1; //minimum voltage of battery before shutdown
+    long sum = 0;                       // sum of samples taken
+    float voltage = 0.0;                // calculated voltage
+    int soc ;                           //SoC
+    const float battery_max = 4.2;      //maximum voltage of battery
+    const float battery_min = 3.1;      //minimum voltage of battery before shutdown
 
-    float R1 = 100000.0; // resistance of R1 (100K)
-    float R2 = 100000.0;  // resistance of R2 (100K)
+    float R1 = 100000.0;                // resistance of R1 (100K)
+    float R2 = 100000.0;                // resistance of R2 (100K)
 
     for (int i = 0; i < 500; i++) {
         sum += analogRead(BATT_PIN);
@@ -211,7 +211,7 @@ float getBattVoltage() {
     }
     // calculate the voltage
     voltage = sum / (float)500;
-    voltage = (voltage * 3.6) / 4096.0; //for internal 1.35v reference
+    voltage = (voltage * 3.6) / 4096.0; // for internal 1.35v reference
    
     // Compensate Divider Circuit
     voltage = voltage / (R2/(R1+R2));
@@ -224,10 +224,12 @@ float getBattVoltage() {
 
 // ฟังก์ชัน fetchTempHumid นี้มีหน้าที่อ่านค่าอุณหภูมิและความชื้นจากเซ็นเซอร์ SHT
 bool fetchTempHumid(){
-
+    // ทำการเริ่มต้นการสื่อสารกับเซ็นเซอร์ SHT โดยใช้ฟังก์ชัน init() ของไลบรารี SHTSensor 
     if (sht.init()) {
+        // หากการเริ่มต้นสำเร็จ จะพิมพ์ข้อความ "SHT success" ออกทาง Serial Monitor
         Serial.print("SHT success\n");
     } else {
+        // หากการเริ่มต้นไม่สำเร็จ จะพิมพ์ข้อความ "SHT failed" ออกทาง Serial Monitor และตั้งค่าสถานะ shtOK เป็น false
         Serial.print("SHT failed\n");
         shtOK = false;
     }
