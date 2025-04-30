@@ -10,6 +10,7 @@ nav :
     - Software : software.md
   - Projects : 
     - อุณหภูมิ ความชื่น : projects/tempHumiProject1.md
+    - Solar Weather Station : projects/solar-weather-station.md
   - ESP WiFi :
     - WiFiManager : projects/conn-wifi.md
   - ESP Webserver :
