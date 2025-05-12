@@ -8,9 +8,12 @@ nav :
   - Wellcome to ESP-Documents : 
     - Starter : index.md
     - Software : software.md
-  - Projects : 
-    - อุณหภูมิ ความชื่น : projects/tempHumiProject1.md
-    - Solar Weather Station : projects/solar-weather-station.md
+  - Function :
+    - Deep Sleep : functions/deep_sleep.md
+  - Module Component : 
+    - DHT22 : modules/dht.md
+    - GY-302 BH1750 : modules/gy-302_bh1750.md
+    - 7-Segment : modules/7segment.md
   - ESP WiFi :
     - WiFiManager : projects/conn-wifi.md
   - ESP Webserver :
