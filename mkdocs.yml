@@ -3,28 +3,29 @@ site_description :
 site_author : By Microtronic
 site_url : https://microtronic.biz/esp-documents
 plugins:
-  - search :
+    - search :
 nav :
-  - Wellcome to ESP-Documents : 
-    - Starter : index.md
-    - Software : software.md
-  - Function :
-    - Deep Sleep : functions/deep_sleep.md
-  - Module Component : 
-    - DHT22 : modules/dht.md
-    - GY-302 BH1750 : modules/gy-302_bh1750.md
-    - 7-Segment : modules/7segment.md
-  - ESP WiFi :
-    - WiFiManager : projects/conn-wifi.md
-  - ESP Webserver :
-    - Basic Webserver : projects/nodemcuWebServer.md
-    - WiFi AP : projects/nodemcuWiFiAP.md
-    - Remote Socket : projects/remoteSockets.md
-  - Reference : 
-    - ESP Pinout : ref/esp_pinout.md
-    - Ref Pins : ref/pins.md
-    - ESP Framework : ref/framework.md
-    - Electronic Senser Module : ref/sensor-module.md 
+    - Wellcome to ESP-Documents : 
+        - Starter : index.md
+        - Software : software.md
+    - Sensors :
+        - DHT22 : sensor/dht.md
+        - GY-302 BH1750 : sensor/gy-302_bh1750.md
+    - Modules : 
+        - Solar Charger MPPT (CN3791) : modules/solar_charger_cn3791.md
+        - 7-Segment : modules/7segment.md
+    - Function :
+        - Deep Sleep : functions/deep_sleep.md
+        - Over The Air (OTA) : functions/ota.md
+        - WiFiManager : projects/conn-wifi.md
+        - WiFi AP : projects/nodemcuWiFiAP.md
+        - Basic Webserver : projects/nodemcuWebServer.md
+        - Remote Socket : projects/remoteSockets.md
+    - Reference : 
+        - ESP Pinout : ref/esp_pinout.md
+        - Ref Pins : ref/pins.md
+        - ESP Framework : ref/framework.md
+        - Electronic Senser Module : ref/sensor-module.md 
 theme : readthedocs
 
 repo_url : https://github.com/GDevLab/ESP-Documents
