@@ -9,11 +9,13 @@ nav :
         - Starter : index.md
         - Software : software.md
     - Sensors :
-        - DHT22 : sensor/dht.md
-        - GY-302 BH1750 : sensor/gy-302_bh1750.md
+        - DHT22 : sensors/dht.md
+        - GY-302 BH1750 : sensors/gy-302_bh1750.md
     - Modules : 
         - Solar Charger MPPT (CN3791) : modules/solar_charger_cn3791.md
         - 7-Segment : modules/7segment.md
+    - Displays :
+        - I2C LCD Display : displays/i2c_lcd_display.md
     - Function :
         - Deep Sleep : functions/deep_sleep.md
         - Over The Air (OTA) : functions/ota.md
